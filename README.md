@@ -1,8 +1,12 @@
 # Python-TCP-Proxy
 
+<<<<<<< HEAD
 This Python script is a simple implementation of a proxy server that intercepts and inspects requests and responses. It was inspired by the book "Black Hat Python" by Justin Seitz. 
 The script allows users to modify both incoming requests and outgoing responses, and can be used for educational or testing purposes. 
 The script uses the socket module to handle network communication, threading to manage multiple client connections.
+=======
+This Python script is a simple implementation of a proxy server that intercepts and inspects requests and responses. It was inspired by the book "Black Hat Python" by Justin Seitz. <br />The script allows users to modify both incoming requests and outgoing responses, and can be used for educational or testing purposes. <br />The script uses the socket module to handle network communication, threading to manage multiple client connections.
+>>>>>>> bd5a796 (first initial)
 
 # Requirements
 - python3
