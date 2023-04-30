@@ -1,6 +1,6 @@
-# Python-HTTP-Proxy
+# Python-TCP-Proxy
 
-This Python script is a simple implementation of a proxy server that intercepts and inspects HTTP requests and responses. It was inspired by the book "Black Hat Python" by Justin Seitz. The script allows users to modify both incoming requests and outgoing responses, and can be used for educational or testing purposes. The script uses the socket module to handle network communication, threading to manage multiple client connections.
+This Python script is a simple implementation of a proxy server that intercepts and inspects requests and responses. It was inspired by the book "Black Hat Python" by Justin Seitz. The script allows users to modify both incoming requests and outgoing responses, and can be used for educational or testing purposes. The script uses the socket module to handle network communication, threading to manage multiple client connections.
 
 # Requirements
 - python3
@@ -15,8 +15,8 @@ pyhton proxy.py [localhost] [localport] [remotehost] [remoteport] [receive_first
 
 # Examples
 ```
-python proxy.py 127.0.0.1 9000 10.12.132.1 9000 True
-python proxy.py 192.168.1.203 21 ftp.sun.ac.za 21 True
+python proxy.py 127.0.0.1 9000 [remoteserver_ip] 9000 True
+python proxy.py 192.168.1.203 21 [ftp_servername] 21 True
 ```
 
 # Modifying requests and responses
