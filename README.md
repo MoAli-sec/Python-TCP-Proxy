@@ -6,10 +6,8 @@ The script uses the socket module to handle network communication, threading to 
 
 # Requirements
 - python3
-- Socket Module
-```
-pip install socket
-```
+- Socket, Threading, Sys Modules
+
 
 # Usage
 The script can be run using the following command:
