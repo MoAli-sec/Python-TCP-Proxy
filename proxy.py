@@ -177,12 +177,12 @@ def proxy_handler(client_socket, remote_host, remote_port, receive_first):
         remote_buffer = receive_from(remote_socket)
         hexdump(remote_buffer)
 
-    # Handle the response received from the remote host
-    remote_buffer = response_handler(remote_buffer)
-    # If the response buffer is not empty, send it to the client socket
-    if len(remote_buffer):
-        print("[<==] Sending %d bytes from localhost." % len(remote_buffer))
-        client_socket.send(remote_buffer)
+        # Handle the response received from the remote host
+        remote_buffer = response_handler(remote_buffer)
+        # If the response buffer is not empty, send it to the client socket
+        if len(remote_buffer):
+            print("[<==] Sending %d bytes from localhost." % len(remote_buffer))
+            client_socket.send(remote_buffer)
 
     # Continuously receive data from the client socket and send it to the remote host
     # Then, receive data from the remote host and send it back to the client socket
